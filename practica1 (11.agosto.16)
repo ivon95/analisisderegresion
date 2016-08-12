@@ -20,3 +20,12 @@ table(base1.1$sexo)
 attach(base1.1)
 table(teduca)
 summary(base1.1$edad)
+
+
+###importar base de datos
+###se utilza el paquete foreign
+
+install.packages("foreign")
+require(foreign)
+
+sociodem <- read.dbf("C://Users//SALA-C4//Desktop//SDEMT215.dbf")
